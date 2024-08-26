@@ -23,6 +23,6 @@ spec:
     retry: # Retry failed syncs
       limit: 3
       backoff:
-        duration: 30
+        duration: 30s
         factor: 2
-        maxDuration: 300
+        maxDuration: 300s
