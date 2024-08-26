@@ -9,9 +9,6 @@ spec:
     repoURL: https://github.com/kamolhasan/argo-application.git
     targetRevision: HEAD
     path: demo-service/mychart
-  helm:
-    name: demo-service
-    namespace: default
   destination:
     server: https://kubernetes.default.svc
     namespace: default
