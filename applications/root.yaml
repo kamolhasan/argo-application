@@ -20,6 +20,7 @@ spec:
     syncOptions:
       - Validate=false
       - Prune=true
+      - SyncInterval=20s
     retry: # Retry failed syncs
       limit: 3
       backoff:
