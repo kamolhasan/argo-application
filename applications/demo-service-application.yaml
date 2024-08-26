@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: guestbook
+  name: demo-service
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/argoproj/argocd-example-apps.git
+    repoURL: https://github.com/kamolhasan/argo-application.git
     targetRevision: HEAD
-    path: guestbook
+    path: demo-service/mychart
   destination:
     server: https://kubernetes.default.svc
     namespace: default
