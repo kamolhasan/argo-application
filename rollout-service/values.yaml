@@ -3,6 +3,8 @@
 # Declare variables to be passed into your templates.
 name: demo-rollout-service
 namespace: default
+configMap:
+  name: my-configmap-1
 
 replicaCount: 3
 
