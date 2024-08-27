@@ -4,7 +4,7 @@
 name: demo-rollout-service
 namespace: default
 configMap:
-  name: my-configmap-2
+  name: my-configmap-3
 
 replicaCount: 3
 
