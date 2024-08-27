@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo-rollout-service
+  namespace: argocds
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kamolhasan/argo-application.git
+    targetRevision: HEAD
+    path: rollout-service
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - Validate=false
+      - Prune=true
+      - SyncInterval=20s
