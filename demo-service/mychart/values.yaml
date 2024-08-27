@@ -4,7 +4,7 @@
 name: my-demo-service
 namespace: default
 
-replicaCount: 2
+replicaCount: 1
 
 image:
   repository: nginx
