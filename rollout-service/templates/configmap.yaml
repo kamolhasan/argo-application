@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Values.configMap.name }}
-  namespace: {{ .Values.namespace }}
+  name: { { .Values.configMap.name } }
+  namespace: { { .Values.namespace } }
 data:
   key1: value1
-  key2: value2
+  key2: value2222
