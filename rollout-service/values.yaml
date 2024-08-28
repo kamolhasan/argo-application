@@ -30,7 +30,8 @@ serviceAccount:
   name: ''
 
 podAnnotations: {}
-podLabels: {}
+podLabels:
+  app.kubernetes.io/config-version: '1.26.0'
 
 podSecurityContext:
   {}
